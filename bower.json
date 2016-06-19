@@ -1,0 +1,15 @@
+{
+  "name": "signupform",
+  "homepage": "https://github.com/dreamthink/SignupForm2.git",
+  "authors": [
+    "Emily Chen <emily.c.chen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6"
+  }
+}

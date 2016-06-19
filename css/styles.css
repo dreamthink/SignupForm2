@@ -1,0 +1,12 @@
+h1 {
+	text-align: center;
+}
+
+form {
+	width: 20em;
+	margin: 1em auto 1em auto;
+}
+
+.pull-right {
+	text-align: right;
+}
