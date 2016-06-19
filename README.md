@@ -1,1 +1,1 @@
-https://github.com/dreamthink/SignupForm2.git
+https://dreamthink.github.io/SignupForm2/
