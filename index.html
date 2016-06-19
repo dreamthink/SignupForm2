@@ -15,17 +15,18 @@
 		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" ng-model="myCtrl.username" name="username" class="form-control" placeholder="Username" required>
-			<span class="error-msg" ng-show="myCtrl.myForm.username.$error.required">Required</span>
+			<span class="error-msg" ng-show="myForm.username.$error.required">Required</span>
 		</div>
 		<div class="form-group">
 			<label for="password">Password</label>
 			<input type="password" ng-model="myCtrl.password" name="password" class="form-control" placeholder="Password" required>
+			<span class="error-msg" ng-show="myForm.password.$error.required">Required</span>
 		</div>
 		<div class="form-group">
-			<button type="submit" class="btn btn-primary pull-right">Submit</button>
+			<button type="submit" class="btn btn-primary pull-right" ng-disabled="myForm.$invalid">Submit</button>
 		</div>
 	</form>
-<pre>{{ myForm | json }}</pre>
-
+<!-- <pre>{{ myForm | json }}</pre>
+ -->
 </body>
 </html>
