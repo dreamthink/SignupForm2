@@ -11,8 +11,8 @@ angular.module("myApp", [])
 	})
 	.controller("myController3", function() {
 		this.submitForm = function() {
-			if (myForm3.$valid) {
-			alert("Form 3:\nUsername is " + this.username3 + "\nPassword is " + this.password3);
+			if (this.myForm3.$valid) {
+			alert("Form3:\nUsername is " + this.username3 + "\nPassword is " + this.password3);
 			}
 		};
 	});
