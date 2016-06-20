@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign-up Form with Angular Validation</title>
 	<script src="angular.min.js"></script>
-	<script src="juery.min.js"></script>
+	<script src="jquery.min.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<script src="js/app.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
@@ -43,5 +43,27 @@
 			</div>
 		</form>
 	</div>
+	<hr>
+	<!-- <h1>Login with Hidden Required Message</h1>
+	<div class="myCtrl3" ng-controller="myController3 as myCtrl3">
+		<form name="myForm3" ng-submit="myCtrl3.submitForm()" novalidate>
+			<div class="form-group">
+				<input type="text" ng-class="{'has-error': myForm3.username3.$invalid}" ng-model="myCtrl3.username3" name="username3" class="form-control" placeholder="Username" required>
+				<span ng-show="myForm3.$submitted && myForm3.username3.$error.required" class="req-msg has-error">Required</span>
+			</div>
+			<div class="form-group">
+				<input type="password" ng-class="{'has-error': myForm3.password3.$invalid}" ng-model="myCtrl3.password3" name="password3" class="form-control" placeholder="Password" required>
+				<span class="req-msg has-error" ng-show="myForm3.password3.$error.required">
+				Required</span>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary pull-right">Submit</button>
+			</div>
+		</form>
+
+			<pre>{{ myForm3 | json }}</pre>
+
+	</div> -->
+
 </body>
 </html>
