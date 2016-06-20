@@ -9,24 +9,39 @@
 	<script src="js/app.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body ng-controller="myController as myCtrl">
-	<h1>Login Form</h1>
-	<form name="myForm" ng-submit="myCtrl.submitForm()" novalidate>
-		<div class="form-group">
-			<label for="username">Username</label>
-			<input type="text" ng-model="myCtrl.username" name="username" class="form-control" placeholder="Username" required>
-			<span class="error-msg" ng-show="myForm.username.$error.required">Required</span>
-		</div>
-		<div class="form-group">
-			<label for="password">Password</label>
-			<input type="password" ng-model="myCtrl.password" name="password" class="form-control" placeholder="Password" required>
-			<span class="error-msg" ng-show="myForm.password.$error.required">Required</span>
-		</div>
-		<div class="form-group">
-			<button type="submit" class="btn btn-primary pull-right" ng-disabled="myForm.$invalid">Submit</button>
-		</div>
-	</form>
-<!-- <pre>{{ myForm | json }}</pre>
- -->
+<body>
+	<h1>Login Form with Disabled Submit Button</h1>
+	<div class="myCtrl1" ng-controller="myController1 as myCtrl1">
+		<form name="myForm1" ng-submit="myCtrl1.submitForm()" novalidate>
+			<div class="form-group">
+				<input type="text" ng-model="myCtrl1.username1" name="username1" class="form-control" placeholder="Username" required>
+				<span class="req-msg" ng-show="myForm1.username1.$error.required">Required</span>
+			</div>
+			<div class="form-group">
+				<input type="password" ng-model="myCtrl1.password1" name="password1" class="form-control" placeholder="Password" required>
+				<span class="req-msg" ng-show="myForm1.password1.$error.required">Required</span>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary pull-right" ng-disabled="myForm1.$invalid">Submit</button>
+			</div>
+		</form>
+	</div>
+	<hr>
+	<h1>Login Form with Highlighted Error Fields</h1>
+	<div class="myCtrl2" ng-controller="myController2 as myCtrl2">	
+		<form name="myForm2" ng-submit="myCtrl2.submitForm()" novalidate>
+			<div class="form-group">
+				<input type="text" ng-class="{'has-error': myForm2.username2.$invalid}" ng-model="myCtrl2.username2" name="username2" class="form-control" placeholder="Username" required>
+				<span class="req-msg has-error" ng-show="myForm2.username2.$error.required">Required</span>
+			</div>
+			<div class="form-group">
+				<input type="password" ng-class="{'has-error': myForm2.password2.$invalid}" ng-model="myCtrl2.password2" name="password2" class="form-control" placeholder="Password" required>
+				<span class="req-msg has-error" ng-show="myForm2.password2.$error.required">Required</span>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary pull-right" ng-disabled="myForm2.$invalid">Submit</button>
+			</div>
+		</form>
+	</div>
 </body>
 </html>

@@ -2,11 +2,21 @@ h1 {
 	text-align: center;
 }
 
-form {
+.myCtrl1 {
 	width: 20em;
-	margin: 1em auto 1em auto;
+	margin: 1em auto 5em auto;
 }
 
 .pull-right {
 	text-align: right;
+}
+
+.myCtrl2 {
+	width: 20em;
+	margin: 1em auto 1em auto;
+}
+
+.has-error {
+	border-color: red;
+	color: red;
 }
