@@ -43,12 +43,12 @@
 	<div class="myCtrl3" ng-controller="myController3 as myCtrl3">
 		<form name="myCtrl3.myForm3" ng-submit="myCtrl3.submitForm()" novalidate>
 			<div class="form-group">
-				<input type="text" ng-class="{'has-error': myCtrl3.myForm3.$submitted && myCtrl3.myForm3.username3.$invalid}" ng-model="myCtrl3.username3" name="username3" class="form-control" placeholder="Username" required>
-				<span ng-show="myCtrl3.myForm3.$submitted && myCtrl3.myForm3.username3.$invalid" class="req-msg has-error">Required</span>
+				<input type="text" ng-class="{'has-error': myCtrl3.myForm3.$submitted && myCtrl3.myForm3.username3.$invalid}" ng-model="myCtrl3.username3" name="username3" class="form-control username3" placeholder="Username" required>
+				<span ng-show="myCtrl3.myForm3.$submitted && myCtrl3.myForm3.username3.$invalid" class="has-error">Required</span>
 			</div>
 			<div class="form-group">
-				<input type="password" ng-class="{'has-error': myCtrl3.myForm3.$submitted && myCtrl3.myForm3.password3.$invalid}" ng-model="myCtrl3.password3" name="password3" class="form-control" placeholder="Password" required>
-				<span class="req-msg has-error" ng-show="myCtrl3.myForm3.$submitted && myCtrl3.myForm3.password3.$invalid">
+				<input type="password" ng-class="{'has-error': myCtrl3.myForm3.$submitted && myCtrl3.myForm3.password3.$invalid}" ng-model="myCtrl3.password3" name="password3" class="form-control password3" placeholder="Password" required>
+				<span class="has-error" ng-show="myCtrl3.myForm3.$submitted && myCtrl3.myForm3.password3.$invalid">
 				Required</span>
 			</div>
 			<div class="form-group">

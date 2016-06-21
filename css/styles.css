@@ -25,3 +25,14 @@ h1 {
 	width: 20em;
 	margin: 1em auto 5em auto;
 }
+
+.username3.ng-dirty.ng-invalid-required {
+	border-color: red;
+	color: red;
+}
+
+.password3.ng-dirty.ng-invalid-required {
+	border-color: red;
+	color: red;
+}
+
